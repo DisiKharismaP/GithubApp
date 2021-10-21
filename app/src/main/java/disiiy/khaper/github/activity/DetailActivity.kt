@@ -100,4 +100,9 @@ class DetailActivity : AppCompatActivity() {
         viewPager = detailBinding.vpDetail
         viewPager.adapter = sectionPagerAdapter
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
+    }
 }
